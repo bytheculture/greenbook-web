@@ -10,7 +10,7 @@ script: htmlproofer home.html --disable-external
 branches:
   only:
   - master
-  - test
+  - landing
 
 env:
   global:
