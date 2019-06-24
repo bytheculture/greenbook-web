@@ -141,7 +141,7 @@ a:focus {
 #main-preloader .object {
     width: 20px;
     height: 20px;
-    background-color: #fa573a;
+    background-color: #00a651;
     border-radius: 50% 50% 50% 50%;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -285,7 +285,7 @@ a:focus {
 
 /* version 3 */
 #index3 #banner {
-    background: url(../images/banner.jpg);
+    background: url(../images/banner.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -340,11 +340,16 @@ a:focus {
 }
 
 .navbar-brand-logo {
-   width: 25%;
-   height: 20%;
-   margin-left: 1%;
-   margin-right: auto;
+   width: 90%;
+   height: 90%;
+   margin-top: -10%;
 }
+
+.navbar-brand-logo2 {
+   width: 30%;
+   height: 30%;
+}
+
 
 .menu-item {
     padding-right: 25px;
@@ -372,7 +377,7 @@ a:focus {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #fa573a;
+    background: #00a651;
     opacity: 0;
     -webkit-transition: all linear .3s;
     -o-transition: all linear .3s;
@@ -381,7 +386,7 @@ a:focus {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #fa573a;
+    color: #00a651;
 }
 
 .navbar-light .navbar-nav .nav-link:hover:after {
@@ -389,7 +394,7 @@ a:focus {
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-    color: #fa573a;
+    color: #00a651;
 }
 
 .navbar-light .navbar-nav .nav-link.active::after {
@@ -403,7 +408,7 @@ a:focus {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #fa573a;
+    background: #00a651;
     opacity: 1;
     -webkit-transition: all linear .3s;
     -o-transition: all linear .3s;
@@ -426,7 +431,7 @@ a:focus {
     position: absolute;
     content: '';
     top: -35px;
-    background: #fa573a;
+    background: #00a651;
     width: 100px;
     height: 111px;
     left: -7px;
@@ -444,7 +449,7 @@ a:focus {
     background: #fff;
     padding: 8px 25px !important;
     border-radius: 50px;
-    color: #fa573a !important;
+    color: #00a651 !important;
     margin-left: 15px;
 }
 
@@ -499,18 +504,18 @@ a:focus {
     height: 369px;
     background: #FF416C;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF4B2B, #fa573a);
+    background: -webkit-linear-gradient(to right, #589abc, #00a651);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#FF4B2B), to(#fa573a));
-    background: -webkit-linear-gradient(left, #FF4B2B, #fa573a);
-    background: -o-linear-gradient(left, #FF4B2B, #fa573a);
-    background: linear-gradient(to right, #FF4B2B, #fa573a);
+    background: -webkit-gradient(linear, left top, right top, from(#589abc), to(#00a651));
+    background: -webkit-linear-gradient(left, #589abc, #00a651);
+    background: -o-linear-gradient(left, #589abc, #00a651);
+    background: linear-gradient(to right, #589abc, #00a651);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: -1;
 }
 
 .banner-text h2 {
-    color: #fa573a;
+    color: #00a651;
     font-family: osb;
     font-size: 55px;
 }
@@ -532,14 +537,14 @@ a:focus {
 
 .banner-text a:hover {
     background: none;
-    color: #fa573a;
+    color: #00a651;
 }
 
 .banner-text a {
     color: #fff;
     font-size: 16px;
-    background: #fa573a;
-    border: 1px solid #fa573a;
+    background: #00a651;
+    border: 1px solid #00a651;
     padding: 14px 20px;
     border-radius: 50px;
     font-family: rb;
@@ -564,14 +569,14 @@ a:focus {
     bottom: 1px;
     width: 20px;
     height: 20px;
-    background: #FF416C;
+    background: #00a651;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: -webkit-linear-gradient(to right, #589abc, #00a651);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#FF4B2B), to(#FF416C));
-    background: -webkit-linear-gradient(left, #FF4B2B, #FF416C);
-    background: -o-linear-gradient(left, #FF4B2B, #FF416C);
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    background: -webkit-gradient(linear, left top, right top, from(#589abc), to(#00a651));
+    background: -webkit-linear-gradient(left, #589abc, #00a651);
+    background: -o-linear-gradient(left, #589abc, #00a651);
+    background: linear-gradient(to right, #589abc, #00a651);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     right: 1px;
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -584,7 +589,7 @@ a:focus {
     content: '';
     top: 45px;
     left: 109px;
-    border: 30px solid #fa573a;
+    border: 30px solid #00a651;
     width: 370px;
     height: 370px;
     border-radius: 50%;
@@ -597,14 +602,14 @@ a:focus {
     top: 1px;
     width: 20px;
     height: 20px;
-    background: #FF416C;
+    background: #ffffff;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: -webkit-linear-gradient(to right, #ffffff, #ffffff);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#FF4B2B), to(#FF416C));
-    background: -webkit-linear-gradient(left, #FF4B2B, #FF416C);
-    background: -o-linear-gradient(left, #FF4B2B, #FF416C);
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
+    background: -webkit-linear-gradient(left, #589abc, #ffffff);
+    background: -o-linear-gradient(left, #ffffff, #ffffff);
+    background: linear-gradient(to right, #ffffff, #ffffff);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
@@ -617,14 +622,14 @@ a:focus {
 .circle::after {
     position: absolute;
     content: '';
-    background: #FF416C;
+    background: #589abc;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: -webkit-linear-gradient(to right, #ffffff, #ffffff);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#FF4B2B), to(#FF416C));
-    background: -webkit-linear-gradient(left, #FF4B2B, #FF416C);
-    background: -o-linear-gradient(left, #FF4B2B, #FF416C);
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
+    background: -webkit-linear-gradient(left, #ffffff, #ffffff);
+    background: -o-linear-gradient(left, #ffffff, #ffffff);
+    background: linear-gradient(to right, #ffffff, #ffffff);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 50%;
     width: 20px;
@@ -654,7 +659,7 @@ a:focus {
     right: 70px;
     top: 242px;
     font-size: 20px;
-    color: #fa573a;
+    color: #00a651;
 }
 
 .mov-arrow i {
@@ -666,14 +671,14 @@ a:focus {
     left: 70px;
     top: 242px;
     font-size: 20px;
-    color: #fa573a;
+    color: #00a651;
 }
 
 .over-shadow {
     -webkit-box-shadow: 0 0 20px rgba(46, 59, 125, 0.23);
     box-shadow: 0 0 20px rgba(46, 59, 125, 0.23);
     padding: 40px 0;
-    border-bottom: 2px solid #fa573a;
+    border-bottom: 2px solid #00a651;
 }
 
 .overview-head h2 {
@@ -705,10 +710,10 @@ a:focus {
     font-size: 44px;
     width: 106px;
     height: 106px;
-    border: 1px solid #fa573a;
+    border: 1px solid #00a651;
     line-height: 106px;
     border-radius: 50%;
-    color: #fa573a;
+    color: #00a651;
     -webkit-transition: all linear .3s;
     -o-transition: all linear .3s;
     transition: all linear .3s;
@@ -722,7 +727,7 @@ a:focus {
 }
 
 .over-item:hover .over-i i {
-    background: #fa573a;
+    background: #00a651;
     color: #fff;
 }
 
@@ -731,7 +736,7 @@ a:focus {
     content: '';
     bottom: 0;
     left: 0;
-    background: #fa573a;
+    background: #00a651;
     width: 50px;
     height: 2px;
 }
@@ -747,7 +752,7 @@ a:focus {
 .over-text a {
     font-family: rb;
     font-size: 16px;
-    color: #fa573a;
+    color: #00a651;
 }
 
 .over-text a:hover i {
@@ -779,8 +784,8 @@ a:focus {
     line-height: 45px;
     width: 45px;
     height: 45px;
-    background: #fa573a;
-    border: 2px solid #fa573a;
+    background: #00a651;
+    border: 2px solid #00a651;
     border-radius: 50%;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -818,7 +823,7 @@ a:focus {
 
 .f-text h3 {
     font-family: rb;
-    color: #fa573a;
+    color: #00a651;
     font-size: 23px;
     padding-bottom: 4px;
 }
@@ -827,7 +832,7 @@ a:focus {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: #fa573a;
+    background: #00a651;
     margin-right: 18px;
     font-size: 20px;
     text-align: center;
@@ -855,7 +860,7 @@ a:focus {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 33px;
-    border: 30px solid #fa573a;
+    border: 30px solid #00a651;
     border-radius: 50%;
     z-index: -1;
 }
@@ -962,7 +967,7 @@ a:focus {
 }
 
 .price-main {
-    background: #fa573a;
+    background: #00a651;
     color: white;
 
 }
@@ -986,15 +991,15 @@ a:focus {
 }
 
 .price-item span {
-    color: #fa573a;
+    color: #00a651;
     font-size: 22px;
     font-family: rr;
 }
 
 .price-item a {
-    color: #fa573a;
+    color: #00a651;
     padding: 14px 20px;
-    border: 1px solid #fa573a;
+    border: 1px solid #00a651;
     border-radius: 50px;
     font-family: rb;
     -webkit-transition: all linear .3s;
@@ -1003,12 +1008,12 @@ a:focus {
 }
 
 .ex-btn {
-    background: #fa573a;
+    background: #00a651;
     color: #fff !important;
 }
 
 .price-item a:hover {
-    background: #fa573a;
+    background: #00a651;
     color: white;
 }
 
@@ -1043,7 +1048,7 @@ a:focus {
 
 .pro-text h3 {
     font-family: rb;
-    color: #fa573a;
+    color: #00a651;
     font-size: 24px;
     padding-top: 4px;
 }
@@ -1051,7 +1056,7 @@ a:focus {
 .mb-0 .btn-link {
     font-size: 16px;
     font-family: rb;
-    color: #f76046;
+    color: #00a651;
     padding-left: 5px;
 }
 
@@ -1079,7 +1084,7 @@ a:focus {
 
 .card-header {
     border: none;
-    border-left: 1px solid #f76046;
+    border-left: 1px solid #00a651;
     background: none;
     border-radius: 0 !important;
     padding-left: 6px;
@@ -1092,10 +1097,10 @@ a:focus {
 .faq-bottom-btn a {
     font-size: 16px;
     font-family: rb;
-    border: 1px solid #fa573a;
+    border: 1px solid #00a651;
     padding: 15px 20px;
     color: #fff;
-    background: #fa573a;
+    background: #00a651;
     border-radius: 50px;
     -webkit-transition: all linear .3s;
     -o-transition: all linear .3s;
@@ -1104,7 +1109,7 @@ a:focus {
 
 .faq-bottom-btn a:hover {
     background: none;
-    color: #fa573a;
+    color: #00a651;
 }
 
 .wh h2 {
@@ -1146,9 +1151,9 @@ a:focus {
 .download-details a {
     font-size: 16px;
     color: #fff;
-    background: #fa573a;
+    background: #00a651;
     font-family: rb;
-    border: 1px solid #fa573a;
+    border: 1px solid #00a651;
     padding: 14px 20px;
     border-radius: 50px;
     -webkit-transition: all linear .3s;
@@ -1158,9 +1163,9 @@ a:focus {
 
 
 .download-details a:hover {
-    color: #fa573a;
+    color: #00a651;
     background: transparent;
-    border: 1px solid #fa573a;
+    border: 1px solid #00a651;
 }
 
 .download-item {
@@ -1270,7 +1275,7 @@ a:focus {
 
 .download-head h3 {
     font-family: rb;
-    color: #fa573a;
+    color: #00a651;
     font-size: 21px;
 }
 
@@ -1350,23 +1355,23 @@ a:focus {
 }
 
 .user-data span:hover {
-    color: #fa573a;
+    color: #00a651;
     cursor: pointer;
 }
 
 .blog-text a {
-    color: #fa573a;
+    color: #00a651;
     font-family: rb;
     font-size: 16px;
 }
 
 .extra1 {
-    color: #fa573a;
+    color: #00a651;
     font-family: rb;
 }
 
 .blog-text-main a {
-    color: #fa573a;
+    color: #00a651;
     font-family: rb;
     font-size: 16px;
 }
@@ -1409,7 +1414,7 @@ a:focus {
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
-    border: 1px solid #fa573a;
+    border: 1px solid #00a651;
     border-top: 1px solid #fff;
 }
 
@@ -1451,7 +1456,7 @@ a:focus {
 =============================*/
 #contact {
     padding: 80px 0;
-    background: url(../images/down.jpg);
+    background: url(../images/banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1476,7 +1481,7 @@ a:focus {
 .mix p {
     font-size: 16px;
     font-family: rb;
-    color: #fa573a;
+    color: #00a651;
     padding-bottom: 11px;
 }
 
@@ -1503,7 +1508,7 @@ a:focus {
     background: none;
     color: white;
     border: 0;
-    border-bottom: 2px solid #fa573a;
+    border-bottom: 2px solid #00a651;
 }
 
 .form-control:focus {
@@ -1529,7 +1534,7 @@ a:focus {
     background: none;
     color: white;
     border: 0;
-    border-bottom: 2px solid #fa573a;
+    border-bottom: 2px solid #00a651;
 }
 
 .input-pa {
@@ -1566,7 +1571,7 @@ a:focus {
 }
 
 .screen-text h3 span {
-    color: #fa573a;
+    color: #00a651;
     font-family: fr;
 }
 
@@ -1602,7 +1607,7 @@ a:focus {
 
 .testimonial-item i {
     font-size: 30px;
-    color: #fa573a;
+    color: #00a651;
 }
 
 .testimonial-item p {
@@ -1621,7 +1626,7 @@ a:focus {
 .testimonial-item span {
     font-family: rr;
     font-size: 16px;
-    color: #fa573a;
+    color: #00a651;
 }
 
 .testimonial-img-item {
@@ -1629,7 +1634,7 @@ a:focus {
 }
 
 .testimonial-img-item img {
-    border: 3px solid #fa573a;
+    border: 3px solid #00a651;
     border-radius: 50%;
     display: inline-block;
     text-align: center !important;
@@ -1678,7 +1683,7 @@ a:focus {
 }
 
 .nb-2:hover {
-    color: #fa573a;
+    color: #00a651;
 }
 
 .fg2 input {
@@ -1686,12 +1691,12 @@ a:focus {
     background: none;
     height: 40px;
     color: #fff;
-    border: 2px solid #fa573a;
+    border: 2px solid #00a651;
 }
 
 .fg2 input:focus {
     background: none;
-    border: 2px solid #fa573a;
+    border: 2px solid #00a651;
     position: relative;
     right: 0;
 }
@@ -1708,14 +1713,14 @@ a:focus {
     right: 16px;
     top: 2px;
     border: none;
-    background: #fa573a;
+    background: #00a651;
     color: #fff;
     font-family: rb;
 }
 
 .fg2 button:hover {
     border: none;
-    background: #fa573a;
+    background: #00a651;
 }
 
 .fg2 button:hover i {
@@ -1737,7 +1742,7 @@ a:focus {
     left: 0;
     width: 25px;
     height: 2px;
-    background: #fa573a;
+    background: #00a651;
 }
 
 .footer-text p {
@@ -1759,7 +1764,7 @@ a:focus {
 }
 
 .footer-text a:hover {
-    color: #fa573a;
+    color: #00a651;
     padding-left: 10px;
 }
 
@@ -1767,7 +1772,7 @@ a:focus {
 14.0 *** COPYRIGHT AREA START ***
 =============================*/
 #copyright {
-    background: #fa573a;
+    background: #00a651;
     width: 100%;
 }
 
