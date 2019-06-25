@@ -250,17 +250,17 @@ a:focus {
 }
 
 @font-face {
-    src: url(../fonts/OpenSans-ExtraBold.ttf);
+    src: url(../fonts/Flood.ttf);
     font-family: osb;
 }
 
 @font-face {
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(../fonts/FjallaOne-Regular.ttf);
     font-family: rr;
 }
 
 @font-face {
-    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/FjallaOne-Regular.ttf);
     font-family: rb;
 }
 
@@ -349,7 +349,6 @@ a:focus {
    width: 30%;
    height: 30%;
 }
-
 
 .menu-item {
     padding-right: 25px;
@@ -517,7 +516,7 @@ a:focus {
 .banner-text h2 {
     color: #00a651;
     font-family: osb;
-    font-size: 55px;
+    font-size: 60px;
 }
 
 .banner-text h3 {
@@ -529,7 +528,6 @@ a:focus {
 .banner-text p {
     color: #fff;
     font-size: 15px;
-    font-family: rr;
     line-height: 25px;
     padding-bottom: 16px;
     padding-top: 10px;
