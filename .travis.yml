@@ -20,7 +20,7 @@ sudo: true # route your build to the container-based infrastructure for a faster
 
 # Optional: disable email notifications about the outcome of your builds
 notifications:
-  email: alyssasgable@gmail.com
+  email: alyssa@bytheculture.co
 
 deploy:
 - provider: s3
