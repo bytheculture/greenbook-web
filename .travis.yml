@@ -23,20 +23,23 @@ notifications:
   email: alyssa@bytheculture.co
 
 deploy:
-- provider: s3
-  access_key_id: $AWS_KEY
-  secret_access_key: $AWS_SECRET
-  bucket: "test.thegreenbook"
-  skip_cleanup: true
-  acl: public_read
-  on:
-     branch: landing
-- provider: s3
-  access_key_id: $AWS_KEY
-  secret_access_key: $AWS_SECRET
-  bucket: "www.thegreenbookapp.com"
-  skip_cleanup: true
-  on:
-    branch: master
+   - provider: s3
+     access_key_id: $AWS_KEY
+     secret_access_key: $AWS_SECRET
+     bucket: "www.thegreenbookapp.com"
+     acl: public_read
+     skip_cleanup: true
+     env: "prod"
+     on:
+       branch: master
+   - provider: s3
+     access_key_id: $AWS_KEY
+     secret_access_key: $AWS_SECRET
+     bucket: "test.thegreenbook"
+     skip_cleanup: true
+     acl: public_read
+     env: "test"
+     on:
+        branch: landing
 
 exclude: [vendor]
