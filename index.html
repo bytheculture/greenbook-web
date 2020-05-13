@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="HTML5 Template,Mobile,Theme,Landing,App" />
-    <meta name="description" content="Apkly - App Landing Page Template" />
-    <title>The Green Book App</title>
+    <meta name="keywords" content="Black Owned,Alabama,Black,Green Book,App, Freelancer, black business, features, mobile app" />
+    <meta name="description" content="The Green Book App is a directory of black and local businesses, freelancers, and events in Alabama." />
+    <title>Home - The Green Book App</title>
 
     <!--font-awesome icons link-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -19,9 +19,48 @@
     <!--main style file-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00a651">
+    <meta name="msapplication-TileColor" content="#00a651">
+    <meta name="theme-color" content="#ffffff">
+
+   <!-- Apple Meta Tags -->
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <meta name="apple-itunes-app" content="app-id="/>
+
+
+   <!--Facebook Open Graph-->
+   <meta property="og:title" content="The Green Book App" />
+   <meta property="og:description" content="video.movie" />
+   <meta property="og:url" content="http://www.thegreenbookapp.com/" />
+   <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+
+   <!--Twitter Open Graph-->
+   <meta name="twitter:card" content="summary" />
+   <meta name="twitter:site" content="@thegreenbookapp" />
+   <meta name="twitter:creator" content="@thegreenbookapp" />
+   <meta property="og:url" content="https://www.thegreenbookapp.co,/" />
+   <meta property="og:title" content="The Green Book App" />
+   <meta property="og:description" content="A directory of black and local businesses, freelancers, and events in Alabama." />
+   <meta property="og:image" content="" />
+   <meta property="fb:app_id" content="" <!--Facebook Open Graph-->
+   <meta property="og:url" content="https://www.thegreenbookapp.com/" />
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="The Green Book App" />
+   <meta property="og:description" content="A directory of black and local businesses, freelancers, and events in Alabama." />
+   <meta property="og:image" content="" />
+
+   <link rel="canonical" href="http://www.thegreenbookapp.com" />
+
+
 </head>
 
-<body>
+<body id="index2">
     <!-- perloader part start -->
     <div id="main-preloader" class="main-preloader semi-dark-background">
         <div class="main-preloader-inner center">
@@ -43,7 +82,7 @@
     <!-- HEADER AREA START -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><b>The Green Book</b></a>
+            <a class="navbar-brand" href="index.html"><img class="navbar-brand-logo" src="images/mustacheBook.png" alt="The Green Book Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
@@ -54,19 +93,19 @@
                         <a class="nav-link" href="#banner">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#overview">Overview</a>
+                        <a class="nav-link" href="#feature">Directory</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#feature">Feature</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#price">Price</a>
-                    </li>
+                       <a class="nav-link" href="#faq">Social Media</a>
+                   </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-account" href="#">Sign Up</a>
+                        <a class="nav-link nav-account" href="businessSignup.html">Business Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-account" href="freelancerSignup.html">Freelancer Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -76,18 +115,19 @@
 
     <!-- BANNER AREA START -->
     <section id="banner">
-        <div class="container">
+        <div class=".particles-js-canvas-el" id="particles-js"></div>
+        <div class="container zindex2">
             <div class="row">
                 <div class="col-lg-5 col-md-6 banner-text">
-                    <h2>AWESOME</h2>
-                    <h3>App Of The Year</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Ad doloribus laborum omnis obcaecati sit dolore</p>
-                    <a href="#">Get It Now</a>
+                    <h2>The Green Book App</h2>
+                    <h3>#GreenIsTheNewBlack</h3>
+                    <p>The Green Book App is a directory of black and local businesses, freelancers, and events in Alabama.</p>
+                    <a href="businessSignup.html">Register Your Business Now</a>
                 </div>
                 <div class="col-lg-7 col-md-6">
                     <div class="banner-img">
                         <div class="circle"></div>
-                        <img src="images/ch1.png" alt="banner-img" class="img-fluid">
+                        <img src="images/mockup1.png" alt="banner-img" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -96,7 +136,7 @@
     <!-- BANNER AREA END -->
 
     <!-- OVERVIEW AREA START -->
-    <section id="overview">
+    <!-- <section id="overview">
         <div class="backtotop">
             <a href="#banner"><i class="fa fa-rocket" aria-hidden="true"></i></a>
         </div>
@@ -177,7 +217,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- OVERVIEW AREA END -->
 
     <!-- FEATURE AREA START -->
@@ -185,24 +225,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center overview-head">
-                    <h2>FEATURE</h2>
+                    <h2>BUSINESS DIRECTORY</h2>
                 </div>
             </div>
             <div class="row f-p">
-                <div class="col-lg-6 col-md-10 m-md-auto f-img">
-                    <img src="images/feature11.png" alt="feature-img" class="img-fluid">
+                <iframe class="airtable-embed" src="https://airtable.com/embed/shrBRlW05MWXJhgdi?backgroundColor=green&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center overview-head">
+                    <h2>FREELANCER DIRECTORY</h2>
                 </div>
-                <div class="col-lg-6 f-text">
-                    <h2>UNLOCK THE BEST,</h2>
-                    <h3>App Features Here</h3>
-                    <p class="p-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit Iste laboriosam facilis dolorem, adipisci quis perspiciatis!</p>
-                    <p><i class="fa fa-rocket" aria-hidden="true"></i> Light weight & super fast</p>
-                    <p><i class="fa fa-lock" aria-hidden="true"></i>
-                        Strong security With privacy Care</p>
-                    <p><i class="fa fa-question" aria-hidden="true"></i>
-                        Best support from our big community</p>
-                    <p><i class="fa fa-cog" aria-hidden="true"></i>
-                        Latest updates on every week and stress free</p>
+            </div>
+            <div class="row f-p">
+                <iframe class="airtable-embed" src="https://airtable.com/embed/shrt9XeX6mj8zbpIG?backgroundColor=green&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            </div>
+            <div class="row">
+               <div class="col-lg-12 text-center f-text">
+                  <h2>SIGN UP YOUR BUSINESS OR AS A FREELANCER FOR FREE!</h2>
+                  <br>
+               </div>
+                <div class="col-lg-12 text-center faq-bottom-btn">
+                   <a href="businessSignup.html">Business Sign Up</a>
+                   <a href="freelancerSignup.html">Freelancer Sign Up</a>
                 </div>
             </div>
         </div>
@@ -210,7 +254,7 @@
     <!-- FEATURE AREA END -->
 
     <!-- COUNT AREA START -->
-    <section id="count">
+    <!-- <section id="count">
         <div class="container zindex2">
             <div class="row counter-main">
                 <div class="col-lg-6">
@@ -251,11 +295,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- COUNTER AREA END -->
 
     <!-- PRICE AREA START -->
-    <section id="price">
+    <!-- <section id="price">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center overview-head">
@@ -313,7 +357,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- PRICE AREA END -->
 
     <!-- FAQ AREA START -->
@@ -321,41 +365,47 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center overview-head wh mix-pro">
-                    <h2>SOLUTION</h2>
+                    <h2>JOIN THE CONVERSATION!</h2>
                 </div>
             </div>
             <div class="row f-p">
                 <div class="col-lg-6 f-text2">
                     <div class="pro-text">
-                        <h2>NEED MORE INFORMATION?</h2>
-                        <h3>Ask Our Community</h3>
+                        <h2>Why do you think it's important to support black-owned businesses?</h2>
+                        <!-- <h3>What are some of your ideas to encourge </h3> -->
                     </div>
                     <div class="accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        01. App User Experience & Interface?
+                                        What is wealth?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quis voluptatibus saepe architecto officiis
-                                </div>
+                                       Wealth is a crucially important measure of economic health. Wealth allows families to transfer income earned in the past to meet spending demands in the future, such as by building up savings to finance a child’s college education.
+                            </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <h2 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        02. Apps Performance and Security?
+                                        Is There A Racial Wealth Gap?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quis voluptatibus saepe architecto officiis
+                                   Black families in America earn just $57.30 for every $100 in income earned by white families, according to the Census Bureau’s Current Population Survey.
+                                   <br>
+                                   <br>
+                                   Black people have been historically prevented from building wealth by slavery and Jim Crow Laws (laws that enforced segregation in the south until the Civil Rights act of 1964). Government policies including The Homestead Act, The Chinese Exclusion Act and even the Social Security Act, were often designed to exclude people of color.
+                                   <br>
+                                   <br>
+                                   <a target="_blank" href="https://www.epi.org/blog/the-racial-wealth-gap-how-african-americans-have-been-shortchanged-out-of-the-materials-to-build-wealth/">The Racial Wealth Gap:  How African-Americans Have Been Shortchanged Out Of The Materials To Build Wealth.</a>
                                 </div>
                             </div>
                         </div>
@@ -363,33 +413,84 @@
                             <div class="card-header" id="headingThree">
                                 <h2 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        03. Best Color Visions & Combination?
+                                        What's the solution?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quis voluptatibus saepe architecto officiis
+                                   <div class="count">
+                                      <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/71FmkfENYDI"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                      <div class="count-btn">
+                                           <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/uCSP_8PAcVk">Courage vs. Racial Wealth Gap</a>
+                                      </div>
+                                   </div>
+                                   <br>
+                                   <br>
+                                   <div class="count">
+                                      <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/PHdeQBGUsTc"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                      <div class="count-btn">
+                                           <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/PHdeQBGUsTc">Economic lifespan of a dollar: Maggie Anderson</a>
+                                      </div>
+                                   </div>
+                                   <div class="count">
+                                      <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/71FmkfENYDI"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                      <div class="count-btn">
+                                           <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/71FmkfENYDI">Launching and supporting Black-owned businesses</a>
+                                      </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-10 m-md-auto f-img">
-                    <img src="images/feature11.png" alt="feature-img" class="img-fluid">
-                </div>
+                <div class="col-lg-6 text-center">
+                  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B2byb__gw1A/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B2byb__gw1A/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/B2byb__gw1A/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">The Green Book was a unique travel guide during this time, when segregation was practiced all over the country.⠀ ⠀ The book, which grew to cover locations in all 50 states, listed hotels, restaurants, gas stations, beauty salons, and other services that would reliably serve African Americans. The listings grew from user correspondence and a network of African American postal workers under the guidance of Victor Hugo Green, the book’s publisher.⠀ ⠀ #supportblackbusiness #blackcommunity #blackbusiness #blackentrepreneurs #blackdollarsmatter #blackempowerment #blackmoney #blackhistory</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/thegreenbook.app/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> The Green Book App</a> (@thegreenbook.app) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-09-15T13:51:45+00:00">Sep 15, 2019 at 6:51am PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+               </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center faq-bottom-btn">
-                    <a href="#">Visit Community</a>
+                    <a target="_blank" href="https://fb.me/thegreenbookapp">Tell Us What You Think!</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- FAQ AREA END -->
 
+    <!-- FAQ AREA START -->
+   <!-- <section id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center overview-head wh mix-pro">
+                    <h2>THE MARKET LISTINGS PRESENTS</h2>
+                </div>
+            </div>
+            <div class="row f-p">
+               <div class="col-lg-6">
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B2PaTPtgqTm/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B2PaTPtgqTm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/B2PaTPtgqTm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#HustleCrushTUESDAY We would love to introduce to you one our founding fathers, the producer behind the @themarketlistings! Very hard working producer with the works of @1wandeezy &amp; @kashvstheworld. He Also graduated from Alabama State University with a bachelors in Physical Education. Check Out @1wandeezy newest single titled “ MULSULANE DREAMS “ 🔥🔥 on @djmlk new mixtape “ TALK YO SHYT 7 on @livemixtapes</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/themarketlistings/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Undefined</a> (@themarketlistings) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-09-10T18:29:57+00:00">Sep 10, 2019 at 11:29am PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+               </div>
+                <div class="col-lg-6 f-text2">
+                    <div class="pro-text">
+                        <h2>UNDEFINED</h2>
+                        <h3>Undefined is a ....</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12 text-center overview-head wh mix-pro">
+                  <br>
+                  <h3>Are you interested in being interviewed for the show?</h3>
+               </div>
+                <div class="col-lg-12 text-center faq-bottom-btn">
+                    <a target="_blank" href="mail_to:wruw4.2.0@gmail.com">Contact Producer</a>
+                </div>
+            </div>
+        </div> -->
+   </section>
+   <!-- FAQ AREA END -->
+
     <!-- DOWNLOAD AREA START -->
-    <section id="download">
+    <!-- <section id="download">
         <div class="container zindex2">
             <div class="row">
                 <div class="col-lg-12 text-center overview-head down-oh">
@@ -446,11 +547,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- DOWNLOAD AREA END -->
 
     <!-- BLOG AREA START -->
-    <section id="blog">
+    <!-- <section id="blog">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center overview-head down-oh">
@@ -553,7 +654,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- BLOG AREA END -->
 
     <!-- CONTACT AREA START -->
@@ -568,47 +669,40 @@
                 <div class="col-lg-10 m-auto">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
-                            <form>
+                            <form action="https://formspree.io/alyssa@bytheculture.co" method="POST">
                                 <div class="form-group mix">
                                     <p><i class="fa fa-user" aria-hidden="true"></i>
                                         Your First Name</p>
-                                    <input type="text" class="form-control" placeholder="Ex. Shakib">
+                                    <input type="text" class="form-control" placeholder="Ex. Victor">
                                 </div>
-                            </form>
                         </div>
                         <div class="col-lg-6 col-md-6">
-                            <form>
                                 <div class="form-group mix">
                                     <p><i class="fa fa-user" aria-hidden="true"></i>
                                         Your Last Name</p>
-                                    <input type="text" class="form-control" placeholder="Ex. Alam">
+                                    <input type="text" class="form-control" placeholder="Ex. Green">
                                 </div>
-                            </form>
                         </div>
                     </div>
                     <div class="row input-pa">
                         <div class="col-lg-12 col-md-12">
-                            <form>
                                 <div class="form-group mix">
                                     <p><i class="fa fa-envelope" aria-hidden="true"></i>
                                         Your Email Address</p>
-                                    <input type="email" class="form-control" placeholder="name@exmple.com">
+                                    <input name="_replyto" type="email" class="form-control" placeholder="name@gmail.com">
                                 </div>
-                            </form>
                         </div>
                     </div>
                     <div class="row input-pa">
                         <div class="col-lg-12 col-md-12">
-                            <form>
                                 <div class="form-group mix">
                                     <p><i class="fa fa-comments" aria-hidden="true"></i>
                                         Send Us Message</p>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="......."></textarea>
+                                    <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="What's up! My name is..."></textarea>
                                 </div>
                                 <div class="input-btn-pa mix">
                                     <div class="faq-bottom-btn text-center">
-                                        <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                            Send Message</a>
+                                        <a><i class="fa fa-paper-plane" aria-hidden="true"></i><input type="submit" value="Send Message"></a>
                                     </div>
                                 </div>
                             </form>
@@ -621,7 +715,7 @@
     <!-- CONTACT AREA END -->
 
     <!-- SCREENSHOT AREA START -->
-    <section id="screenshot">
+    <!-- <section id="screenshot">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center overview-head down-oh">
@@ -630,7 +724,6 @@
             </div>
             <div class="row">
                 <div class="kc-wrap">
-                    <!-- Carousel items follow -->
                     <div class="kc-item">
                         <img src="images/screenshot1.png" alt="s1-img">
                     </div>
@@ -664,15 +757,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- SCREENSHOT AREA END -->
 
     <!--  TESTIMONIAL AREA START -->
-    <section id="testimonial">
+    <!-- <section id="testimonial">
         <div class="container zindex2">
             <div class="row">
                 <div class="col-lg-12 text-center overview-head">
-                    <h2>COMMENT</h2>
+                    <h2>QUOTES</h2>
                 </div>
             </div>
             <div class="row">
@@ -724,7 +817,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--  TESTIMONIAL AREA END -->
 
     <!--  FOOTER AREA START -->
@@ -732,45 +825,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <a class="navbar-brand nb-2" href="index.html"><b>Apkly.</b></a>
+                    <a class="navbar-brand nb-2" href="index.html"><img class="navbar-brand-logo2" src="images/bigGLogo.png" alt="The Green Book Logo"></a>
                 </div>
                 <div class="col-lg-5 col-md-6 ml-auto">
-                    <form>
+                    <form action="https://bytheculture.us20.list-manage.com/subscribe/post?u=5bbfd121cb1c91a3489c1e8f6&amp;id=cc426aebe6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div class="form-group fg2">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Subscribe Now">
-                            <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send</button>
+                            <input class="form-control required email" type="email" value="" name="EMAIL" id="mce-EMAIL"  placeholder="Subscribe to Our Newsletter!">
+                            <button type="submit" class="Subscribe btn btn-primary" name="subscribe" id="mc-embedded-subscribe"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send</button>
                         </div>
                     </form>
+                  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
                 </div>
             </div>
             <div class="row no-p2 pt-5">
                 <div class="col-lg-3 col-sm-6 col-md-6 footer-text">
                     <h3>About Us</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ipsa quisquam nam eos facilis vero dolorum. Sit earum ea blanditiis</p>
+                    <p>The Green Book's mission is to promote entrepreneurship and community between black business owners, freelancers, and local businesses in Alabama.
+                     <a target="_blank" href="https://www.bytheculture.co">By The Culture is a community that specializes in creating custom mobile applications and websites.</a> </p>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 footer-text">
-                    <h3>Our Menu</h3>
-                    <a href="#">Home</a>
-                    <a href="#">Overview</a>
-                    <a href="#">Feature</a>
-                    <a href="#">Download</a>
-                    <a href="#">Others</a>
+                    <h3>Menu</h3>
+                    <a href="#banner">Home</a>
+                    <a href="#feature">Directory</a>
+                    <a href="#faq">Social Media</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 footer-text">
                     <h3>Follow Us</h3>
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Google+</a>
-                    <a href="#">Youtube</a>
-                    <a href="#">Instagram</a>
+                    <a target="_blank" href="https://www.facebook.com/thegreenbookapp/">Facebook</a>
+                    <a target="_blank" href="https://twitter.com/thegreenbookapp">Twitter</a>
+                    <a target="_blank" href="https://www.instagram.com/thegreenbook.app/">Instagram</a>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 footer-text">
-                    <h3>Other Features</h3>
-                    <a href="#">Affiliate</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Tutorial</a>
-                    <a href="#">Groups</a>
-                    <a href="#">Others</a>
+                    <h3>Important Links</h3>
+                    <a href="terms.html">Terms and Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
                 </div>
             </div>
         </div>
@@ -782,7 +871,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center copyright-text">
-                    <p>Copyright&copy;2018 - Design by <a href="index.html">Apkly</a></p>
+                    <p>Copyright&copy;2019 - Designed <a href="http://www.bytheculture.co/">By The Culture</a></p>
                 </div>
             </div>
         </div>
@@ -794,9 +883,22 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/killercarousel.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/venobox.min.js"></script>
     <script src="js/circular.js"></script>
     <script src="js/custom.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123648931-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-123648931-2');
+    </script>
+
 </body>
 
 </html>
