@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Listiry</title>
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+<header id="masthead" class="site-header site-header--fluid bg-primary">
+  <div class="d-lg-flex justify-content-lg-between align-items-lg-center site-header__container">
+    <div class="d-lg-flex align-items-lg-center">
+      <div class="site-header__logo">
+        <a href="index.html">
+          <h1 class="screen-reader-text">Listiry</h1>
+          <img src="assets/images/logo-1.png" alt="Listiry">
+        </a>
+      </div><!-- .site-header__logo -->
+
+      <form class="search-form" action="index.html">
+        <div class="form-group__wrapper">
+          <input type="text" name="place" placeholder="coffee shop, dinner..." class="form-input form-input--no-br">
+        </div>
+        <div class="form-group__wrapper">
+          <input type="text" name="location" placeholder="location" class="form-input form-input--no-br">
+          <a href="#" class="form-group__action c-dusty-gray">
+            <i class="fa fa-map-marker"></i>
+          </a>
+        </div>
+        <div class="form-group__wrapper">
+          <button type="submit" class="button button--primary button--medium">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="d-lg-flex align-items-lg-center">
+      <ul class="min-list main-navigation main-navigation--white">
+        <li>
+          <a href="#">Home</a>
+          <ul class="min-list">
+            <li>
+              <a href="index.html">Home 1</a>
+            </li>
+            <li>
+              <a href="index-2.html">Home 2</a>
+            </li>
+            <li>
+              <a href="index-3.html">Home 3</a>
+            </li>
+            <li>
+              <a href="index-4.html">Home 4</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Listings</a>
+          <ul class="min-list">
+            <li>
+              <a href="listing-1.html">Listings Column Map 1</a>
+            </li>
+            <li>
+              <a href="listing-2.html">Listings Column Map 2</a>
+            </li>
+            <li>
+              <a href="listing-3.html">Listings Column Map 3</a>
+            </li>
+            <li>
+              <a href="listing-5.html">Listings Fullwidth Map</a>
+            </li>
+            <li>
+              <a href="listing-4.html">Listings Without Map</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Single Listing</a>
+          <ul class="min-list">
+            <li>
+              <a href="single-listing-1.html">Single Listing 1</a>
+            </li>
+            <li>
+              <a href="single-listing-2.html">Single Listing 2</a>
+            </li>
+            <li>
+              <a href="single-listing-3.html">Single Listing 3</a>
+            </li>
+            <li>
+              <a href="single-listing-4.html">Single Listing 4</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Pages</a>
+          <ul class="min-list">
+            <li>
+              <a href="#">My Account</a>
+              <ul class="min-list">
+                <li>
+                  <a href="profile.html">My Profile</a>
+                </li>
+                <li>
+                  <a href="my-listings.html">My Listings</a>
+                </li>
+                <li>
+                  <a href="bookmarked-listings.html">Bookmarked Listings</a>
+                </li>
+                <li>
+                  <a href="change-password.html">Change Password</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="coming-soon.html">Coming Soon</a>
+            </li>
+            <li>
+              <a href="404.html">404 Page</a>
+            </li>
+            <li>
+              <a href="pricing-table.html">Pricing Table</a>
+            </li>
+            <li>
+              <a href="login.html">Login/Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      </ul><!-- .main-navigation -->
+
+      <div class="user-action">
+        <a href="login.html" class="sign-in c-white">
+          <i class="fa fa-user"></i>
+          Sign in
+        </a>
+        <button class="button button--small button--pill button--primary d-none d-lg-inline-block">&plus; Add Listing</button>
+      </div><!-- .user-action -->
+    </div>
+
+    <div class="d-lg-none nav-mobile">
+      <a href="#" class="nav-toggle js-nav-toggle nav-toggle--white">
+        <span></span>
+      </a><!-- .nav-toggle -->
+    </div><!-- .nav-mobile -->
+  </div><!-- .site-header__container -->
+</header><!-- #masthead -->
+<div class="page-content">
+  <div class="breadcrumbs-container">
+  <div class="container">
+    <ul class="breadcrumbs min-list inline-list">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">
+          <span class="breadcrumbs__title">Home</span>
+        </a>
+      </li>
+
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">
+          <span class="breadcrumbs__title">Pages</span>
+        </a>
+      </li>
+
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__page c-gray">Blog Single</span>
+      </li>
+    </ul><!-- .breadcrumbs -->
+  </div><!-- .container -->
+</div>
+  <div class="container">
+    <div class="post-image">
+      <img src="assets/images/uploads/post-image.jpg" alt="Post Image">
+    </div>
+    <div class="col-lg-8 offset-lg-2">
+      <header class="entry-header">
+        <h1 class="entry-title">The Secret Sauce Behind Scott's Cheap Flights</h1>
+        <p class="entry-byline c-dusty-gray">
+          <a href="#">Dec 05, 2017</a>
+          by <a href="#">NomadicMatt</a>
+        </p>
+      </header><!-- .entry-header -->
+
+      <div class="entry-content">
+        <p>
+          When friends and family far removed from the travel hacking/cheap flights space ask me about a website, I know
+          its mainstream. While there are many good deal websites out there (The Flight Deal, Secret Flying, and Holiday
+          Pirates are three of my favorites), Scott’s Cheap Flights seems to have broken through where others have not.
+          Over 1 million people get his daily flight deals email. I’m a big fan of the website and their ability to
+          often break airfare deals (I used one of their alerts to fly to South Africa). It turns out Scott is a fan of
+          my website too so we sat down for an interview where I got him to spill the secret behind his website:
+        </p>
+        <p>
+          <strong>Nomadic Matt: Tell everyone about yourself. How did you get into this?</strong>
+          <br/>
+          <strong>Scott: </strong>
+          When I graduated college in 2009, I knew two things: (1) I wanted to travel the world and (2) I was never
+          going to be wealthy. So if I wasn’t going to let #2 prevent #1, I knew I would have to figure out some
+          creative ways to travel without spending my life savings. I began reading up on flight pricing economics,
+          spending hours on various flight search engines, and learning various airfare patterns. Before long, I found
+          an online community of fellow travel hackers and cheap-flight aficionados who enjoy not just travel but also
+          the thrill of getting a great deal on flights.
+        </p>
+        <p>
+          <strong>Where did the idea of this website come from?</strong>
+          Scott’s Cheap Flights has a weird origin story. In 2013, I got the best deal of my life: nonstop from NYC to
+          Milan for $130 round-trip. Milan hadn’t even been on my radar as a place to visit, but for $130 round-trip,
+          there’s no way I wouldn’t go. And it turned out to be amazing! I went skiing in the Alps, caught an AC Milan
+          match, hiked Cinque Terre, hung out on Lake Como. It was divine.
+        </p>
+        <p>
+          When I got back, word spread among friends and coworkers about the deal I got, and dozens of them began asking
+          me to let them know next time I found a fare like that so they could get in on it, too. So rather than try to
+          remember to tell George and Esther and Aviva when a great deal popped up, I decided to start a simple little
+          email list instead so I could alert everyone at once. Scott’s Cheap Flights was born.
+        </p>
+        <p>
+          <em>Scott founded Scott’s Cheap Flights in a Denver coffeeshop. Scott is the flight searcher-in-chief,
+            spending 8-12 hours a day on Google Flights as well as overseeing daily operations. If you’re looking for
+            flight deals, it’s one of the best.</em>
+        </p>
+      </div><!-- .entry-content -->
+
+      <div class="entry-meta">
+        <div class="entry-tags">
+          <a href="#">haintheme</a>
+          <a href="#">listiry blog</a>
+          <a href="#">directory</a>
+          <a href="#">listing</a>
+        </div>
+
+        <ul class="min-list inline-list social-list">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div><!-- .entry-meta -->
+
+      <div class="nav-links">
+        <div class="nav-link nav-previous">
+          <a href="#">
+            <span class="screen-reader-text">Previous post:</span>
+            <span class="nav-link-text">Previous:</span>
+            <h3 class="nav-link-title">Why Cheap Flights Aren't Always Best to Buy</h3>
+          </a>
+        </div>
+
+        <div class="nav-link nav-next">
+          <a href="#">
+            <span class="screen-reader-text">Next post:</span>
+            <span class="nav-link-text">Next:</span>
+            <h3 class="nav-link-title">5 Steps to Book a Cheap Flight Online</h3>
+          </a>
+        </div>
+      </div><!-- .nav-links -->
+
+      <div id="comments" class="comments-area">
+        <div class="comments-wrap">
+          <h3 class="comments-title">3 Comments</h3>
+          <ol class="min-list comment-list">
+            <li class="comment">
+              <article>
+                <div class="comment-wrapper">
+                  <div class="comment-avatar">
+                    <img src="assets/images/uploads/james-turner.jpg" alt="James Turner">
+                  </div><!-- .comment-avatar -->
+
+                  <div class="comment-content">
+                    <header class="comment-header">
+                      <h4 class="comment-author">James Turner</h4>
+                      <span class="comment-time c-gray">December 11, 2017</span>
+                    </header>
+
+                    <div class="comment-body c-dove-gray">
+                      <p>
+                        Great interview. I love a success story, and even more so when the guy still has humility like
+                        that. Hadn’t heard of him, but now off to check out his site…I’d like to visit Slovakia (or
+                        Greece, Slovenia, ad infinitum) this summer!
+                      </p>
+                      <p>Thanks Matt and Scott!</p>
+                    </div>
+
+                    <div class="comment-reply">
+                      <a href="#">Reply</a>
+                    </div>
+                  </div><!-- .comment-content -->
+                </div><!-- .comment-wrapper -->
+              </article>
+              <ul class="children">
+                <li class="comment">
+                  <article>
+                    <div class="comment-wrapper">
+                      <div class="comment-avatar">
+                        <img src="assets/images/uploads/nomadic-matt.jpg" alt="Nomadic Matt">
+                      </div><!-- .comment-avatar -->
+
+                      <div class="comment-content">
+                        <header class="comment-header">
+                          <h4 class="comment-author">NomadicMatt</h4>
+                          <span class="comment-time c-gray">December 14, 2017</span>
+                        </header>
+
+                        <div class="comment-body c-dove-gray">
+                          <p>Those are great deals! Very cool!</p>
+                        </div>
+
+                        <div class="comment-reply">
+                          <a href="#">Reply</a>
+                        </div>
+                      </div><!-- .comment-content -->
+                    </div><!-- .comment-wrapper -->
+                  </article>
+                </li><!-- .comment -->
+              </ul>
+            </li><!-- .comment -->
+
+            <li class="comment">
+              <article>
+                <div class="comment-wrapper">
+                  <div class="comment-avatar">
+                    <img src="assets/images/uploads/ryan-biddulph.jpg" alt="Ryan Biddulph">
+                  </div><!-- .comment-avatar -->
+
+                  <div class="comment-content">
+                    <header class="comment-header">
+                      <h4 class="comment-author">James Turner</h4>
+                      <span class="comment-time c-gray">December 11, 2017</span>
+                    </header>
+
+                    <div class="comment-body c-dove-gray">
+                      <p>
+                        Scott’s is the best! We scored RT tickets to South Africa from DC for $375 recently and $450
+                        tickets to Bangkok RT from DC a few months before.
+                      </p>
+                    </div>
+
+                    <div class="comment-reply">
+                      <a href="#">Reply</a>
+                    </div>
+                  </div><!-- .comment-content -->
+                </div><!-- .comment-wrapper -->
+              </article>
+            </li><!-- .comment -->
+          </ol><!-- .comment-list -->
+        </div><!-- .comments-wrap -->
+
+        <div class="comments-wrap">
+          <h3 class="comments-title">Leave a Reply</h3>
+          <form class="comment-form" action="/" method="post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="author">Your name *</label>
+                  <input
+                    type="text"
+                    name="author"
+                    id="author"
+                    class="form-input form-input--square form-input--border-c-alto"
+                    placeholder="Enter your full name"
+                    required
+                  >
+                </div>
+              </div><!-- .col -->
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">Your email *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input form-input--square form-input--border-c-alto"
+                    placeholder="Enter your email"
+                    required
+                  >
+                </div>
+              </div><!-- .col -->
+
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="comment">Your comment</label>
+                  <textarea
+                    class="form-input form-input--square form-input--border-c-alto"
+                    rows="8"
+                    id="comment"
+                    name="comment"
+                    placeholder="Comment here"
+                  ></textarea>
+                </div>
+              </div><!-- .col -->
+
+              <div class="col-md-12">
+                <div class="form-group--submit">
+                  <button
+                    class="button button--square button--primary button--large button--submit"
+                    type="submit"
+                  >
+                    Post Comment
+                  </button>
+                </div>
+              </div><!-- .col -->
+            </div><!-- .row -->
+          </form><!-- .comment-form -->
+        </div><!-- .comments-wrap -->
+      </div><!-- #comments -->
+    </div><!-- .col -->
+  </div><!-- .container -->
+</div><!-- .page-content -->
+<footer id="colophone" class="site-footer">
+  <div class="t-center site-footer__primary">
+    <div class="container">
+      <div class="site-footer__logo">
+        <a href="index.html">
+          <h1 class="screen-reader-text">Listiry</h1>
+          <img src="assets/images/logo-footer.png" alt="Listiry">
+        </a>
+      </div>
+      <p class="t-small">Listiry is making finding destination faster, easier, and customized for you.</p>
+      <ul class="min-list inline-list site-footer__links site-footer__social">
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-pinterest"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- .site-footer__primary -->
+
+  <div class="site-footer__secondary">
+    <div class="container">
+      <div class="site-footer__secondary-wrapper">
+        <p class="site-footer__copyright">&copy; 2018
+          <span class="c-secondary">Listiry</span> by Felix. All Rights Reserved.</p>
+        <ul class="min-list inline-list site-footer__links site-footer__details">
+          <li>
+            <a href="tel:+0987654321">Tel: +098 765 4321</a>
+          </li>
+          <li>
+            <a href="#">Get this theme</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- .site-footer__secondary -->
+</footer><!-- #colophone -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4"></script>
+<script src="https://cdn.rawgit.com/googlemaps/v3-utility-library/master/infobox/src/infobox.js"></script>
+<script src="assets/scripts/app.js"></script>
+</body>
+</html>

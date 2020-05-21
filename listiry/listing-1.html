@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Listiry</title>
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+<header id="masthead" class="site-header site-header--fluid bg-primary">
+  <div class="d-lg-flex justify-content-lg-between align-items-lg-center site-header__container">
+    <div class="d-lg-flex align-items-lg-center">
+      <div class="site-header__logo">
+        <a href="index.html">
+          <h1 class="screen-reader-text">Listiry</h1>
+          <img src="assets/images/logo-1.png" alt="Listiry">
+        </a>
+      </div><!-- .site-header__logo -->
+
+      <form class="search-form" action="index.html">
+        <div class="form-group__wrapper">
+          <input type="text" name="place" placeholder="coffee shop, dinner..." class="form-input form-input--no-br">
+        </div>
+        <div class="form-group__wrapper">
+          <input type="text" name="location" placeholder="location" class="form-input form-input--no-br">
+          <a href="#" class="form-group__action c-dusty-gray">
+            <i class="fa fa-map-marker"></i>
+          </a>
+        </div>
+        <div class="form-group__wrapper">
+          <button type="submit" class="button button--primary button--medium">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="d-lg-flex align-items-lg-center">
+      <ul class="min-list main-navigation main-navigation--white">
+        <li>
+          <a href="#">Home</a>
+          <ul class="min-list">
+            <li>
+              <a href="index.html">Home 1</a>
+            </li>
+            <li>
+              <a href="index-2.html">Home 2</a>
+            </li>
+            <li>
+              <a href="index-3.html">Home 3</a>
+            </li>
+            <li>
+              <a href="index-4.html">Home 4</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Listings</a>
+          <ul class="min-list">
+            <li>
+              <a href="listing-1.html">Listings Column Map 1</a>
+            </li>
+            <li>
+              <a href="listing-2.html">Listings Column Map 2</a>
+            </li>
+            <li>
+              <a href="listing-3.html">Listings Column Map 3</a>
+            </li>
+            <li>
+              <a href="listing-5.html">Listings Fullwidth Map</a>
+            </li>
+            <li>
+              <a href="listing-4.html">Listings Without Map</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Single Listing</a>
+          <ul class="min-list">
+            <li>
+              <a href="single-listing-1.html">Single Listing 1</a>
+            </li>
+            <li>
+              <a href="single-listing-2.html">Single Listing 2</a>
+            </li>
+            <li>
+              <a href="single-listing-3.html">Single Listing 3</a>
+            </li>
+            <li>
+              <a href="single-listing-4.html">Single Listing 4</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Pages</a>
+          <ul class="min-list">
+            <li>
+              <a href="#">My Account</a>
+              <ul class="min-list">
+                <li>
+                  <a href="profile.html">My Profile</a>
+                </li>
+                <li>
+                  <a href="my-listings.html">My Listings</a>
+                </li>
+                <li>
+                  <a href="bookmarked-listings.html">Bookmarked Listings</a>
+                </li>
+                <li>
+                  <a href="change-password.html">Change Password</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="coming-soon.html">Coming Soon</a>
+            </li>
+            <li>
+              <a href="404.html">404 Page</a>
+            </li>
+            <li>
+              <a href="pricing-table.html">Pricing Table</a>
+            </li>
+            <li>
+              <a href="login.html">Login/Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      </ul><!-- .main-navigation -->
+
+      <div class="user-action">
+        <a href="login.html" class="sign-in c-white">
+          <i class="fa fa-user"></i>
+          Sign in
+        </a>
+        <button class="button button--small button--pill button--primary d-none d-lg-inline-block">&plus; Add Listing</button>
+      </div><!-- .user-action -->
+    </div>
+
+    <div class="d-lg-none nav-mobile">
+      <a href="#" class="nav-toggle js-nav-toggle nav-toggle--white">
+        <span></span>
+      </a><!-- .nav-toggle -->
+    </div><!-- .nav-mobile -->
+  </div><!-- .site-header__container -->
+</header><!-- #masthead -->
+<div class="d-xl-flex">
+  <div class="order-xl-1 listing-column listing-column--xl-50 listing-column--map js-map-container">
+    <div id="listing-map" class="map"></div>
+    <ul class="min-list map-controls">
+      <li class="map-control reset">
+        <button class="button map-control-button">
+          <i class="fa fa-undo"></i>
+        </button>
+      </li>
+      <li class="map-control toggle-fullscreen">
+        <button class="button map-control-button">
+          <i class="fa fa-expand"></i>
+        </button>
+      </li>
+    </ul><!-- .map-control -->
+  </div><!-- .listing-column -->
+
+  <div class="order-xl-0 listing-column listing-column--xl-50 listing-column--content">
+    <div class="c-gray">
+      Suggestion for <span class="c-primary keyword">Restaurant</span> near <span
+      class="c-primary keyword">London</span>
+    </div>
+
+    <div class="listing-filter-container">
+      <span class="c-gray listing-filter-label">Filter</span>
+      <div class="d-xxl-flex">
+        <ul class="min-list d-flex listing-filter listing-filter--group align-self-lg-start">
+          <li>
+            <a href="#">$</a>
+          </li>
+
+          <li>
+            <a href="#">$$</a>
+          </li>
+
+          <li>
+            <a href="#">$$$</a>
+          </li>
+
+          <li>
+            <a href="#">$$$$</a>
+          </li>
+        </ul><!-- .listing-filter -->
+
+        <ul class="min-list inline-list listing-filter listing-filter--list">
+          <li>
+            <a href="#">
+              <i class="fa fa-clock-o"></i>
+              Open Now
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-star-o"></i>
+              Highest Rate
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-comment-o"></i>
+              Most Review
+            </a>
+          </li>
+        </ul><!-- .listing-filter -->
+      </div><!-- d-flex -->
+
+      <span class="c-gray listing-filter-label">Radius (Km)</span>
+      <input type="range" min="0" max="10" step="1" data-labels="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10" class="js-range">
+
+      <span class="c-gray listing-filter-label">Just show me</span>
+      <ul class="min-list d-flex flex-wrap listing-filter listing-filter--category">
+        <li>
+          <a href="#">
+            <div class="listing-filter__bg listing-filter__bg--coffee"></div>
+            <div class="d-flex justify-content-center align-items-center c-white listing-filter__content">
+              <span>Coffee</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="listing-filter__bg listing-filter__bg--food"></div>
+            <div class="d-flex justify-content-center align-items-center c-white listing-filter__content">
+              <span>Food</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="listing-filter__bg listing-filter__bg--cake"></div>
+            <div class="d-flex justify-content-center align-items-center c-white listing-filter__content">
+              <span>Cake</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="listing-filter__bg listing-filter__bg--fruit"></div>
+            <div class="d-flex justify-content-center align-items-center c-white listing-filter__content">
+              <span>Fruit</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div><!-- .listing-filter-container -->
+    <div class="d-md-flex flex-md-wrap justify-content-between list-view">
+      <div class="list-view__item">
+        <div class="listing hover-effect">
+          <div class="d-sm-flex align-items-sm-center listing__wrapper">
+            <div class="listing__thumbnail">
+              <a href="single-listing-1.html">
+                <img src="assets/images/uploads/listing-1.jpg" alt="April Boutique Coffee">
+                <span class="label label--tertiary">Closed</span>
+                <span class="favorite c-white">
+                  <i class="fa fa-heart-o"></i>
+                </span>
+              </a>
+            </div><!-- .listing__thumbnail -->
+            <div class="d-flex justify-content-between align-items-center listing__detail">
+              <div class="listing__detail-left">
+                <p class="listing__category t-small">
+                  <span class="c-dove-gray">Cocktail, Coffee</span>
+                  <span class="listing__price">
+                    <i class="fa fa-usd c-dove-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                  </span>
+                </p>
+                <h3 class="listing__title">
+                  <a href="single-listing-1.html">April Boutique Restaurant</a>
+                </h3>
+                <p class="listing__review c-dusty-gray">
+                  <span class="stars-outer" data-rating="5">
+                    <span class="stars-inner"></span>
+                  </span>
+                  <span>(5 Reviews)</span>
+                </p>
+                <p class="listing__location c-dusty-gray no-b-margin">
+                  <i class="fa fa-map-marker"></i>
+                  18 Leinster Terr, Paddington
+                </p>
+              </div>
+
+              <div class="listing__detail-right">
+                <span class="listing__score t-center">7.0</span>
+              </div>
+            </div><!-- .listing__detail -->
+          </div><!-- .listing__wrapper -->
+        </div><!-- .listing -->
+      </div><!-- .list-view__item -->
+      <div class="list-view__item">
+        <div class="listing hover-effect">
+          <div class="d-sm-flex align-items-sm-center listing__wrapper">
+            <div class="listing__thumbnail">
+              <a href="single-listing-1.html">
+                <img src="assets/images/uploads/listing-2.jpg" alt="April Boutique Coffee">
+                <span class="label label--secondary">Open</span>
+                <span class="favorite c-white">
+                  <i class="fa fa-heart-o"></i>
+                </span>
+              </a>
+            </div><!-- .listing__thumbnail -->
+            <div class="d-flex justify-content-between align-items-center listing__detail">
+              <div class="listing__detail-left">
+                <p class="listing__category t-small">
+                  <span class="c-dove-gray">Indian</span>
+                  <span class="listing__price">
+                    <i class="fa fa-usd c-dove-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                  </span>
+                </p>
+                <h3 class="listing__title">
+                  <a href="single-listing-1.html">Cuhs Bros Cake</a>
+                </h3>
+                <p class="listing__review c-dusty-gray">
+                  <span class="stars-outer" data-rating="5">
+                    <span class="stars-inner"></span>
+                  </span>
+                  <span>(5 Reviews)</span>
+                </p>
+                <p class="listing__location c-dusty-gray no-b-margin">
+                  <i class="fa fa-map-marker"></i>
+                  18 Leinster Terr, Paddington
+                </p>
+              </div>
+
+              <div class="listing__detail-right">
+                <span class="listing__score t-center">7.0</span>
+              </div>
+            </div><!-- .listing__detail -->
+          </div><!-- .listing__wrapper -->
+        </div><!-- .listing -->
+      </div><!-- .list-view__item -->
+      <div class="list-view__item">
+        <div class="listing hover-effect">
+          <div class="d-sm-flex align-items-sm-center listing__wrapper">
+            <div class="listing__thumbnail">
+              <a href="single-listing-1.html">
+                <img src="assets/images/uploads/listing-3.jpg" alt="April Boutique Coffee">
+                <span class="label label--tertiary">Closed</span>
+                <span class="favorite c-white">
+                  <i class="fa fa-heart-o"></i>
+                </span>
+              </a>
+            </div><!-- .listing__thumbnail -->
+            <div class="d-flex justify-content-between align-items-center listing__detail">
+              <div class="listing__detail-left">
+                <p class="listing__category t-small">
+                  <span class="c-dove-gray">Pizza, Mexican</span>
+                  <span class="listing__price">
+                    <i class="fa fa-usd c-dove-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                  </span>
+                </p>
+                <h3 class="listing__title">
+                  <a href="single-listing-1.html">Nabu Restaurant &amp; Bar</a>
+                </h3>
+                <p class="listing__review c-dusty-gray">
+                  <span class="stars-outer" data-rating="5">
+                    <span class="stars-inner"></span>
+                  </span>
+                  <span>(5 Reviews)</span>
+                </p>
+                <p class="listing__location c-dusty-gray no-b-margin">
+                  <i class="fa fa-map-marker"></i>
+                  18 Leinster Terr, Paddington
+                </p>
+              </div>
+
+              <div class="listing__detail-right">
+                <span class="listing__score t-center">7.0</span>
+              </div>
+            </div><!-- .listing__detail -->
+          </div><!-- .listing__wrapper -->
+        </div><!-- .listing -->
+      </div><!-- .list-view__item -->
+      <div class="list-view__item">
+        <div class="listing hover-effect">
+          <div class="d-sm-flex align-items-sm-center listing__wrapper">
+            <div class="listing__thumbnail">
+              <a href="single-listing-1.html">
+                <img src="assets/images/uploads/listing-4.jpg" alt="April Boutique Coffee">
+                <span class="label label--tertiary">Closed</span>
+                <span class="favorite c-white">
+                  <i class="fa fa-heart-o"></i>
+                </span>
+              </a>
+            </div><!-- .listing__thumbnail -->
+            <div class="d-flex justify-content-between align-items-center listing__detail">
+              <div class="listing__detail-left">
+                <p class="listing__category t-small">
+                  <span class="c-dove-gray">Wine Bar</span>
+                  <span class="listing__price">
+                    <i class="fa fa-usd c-dove-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                  </span>
+                </p>
+                <h3 class="listing__title">
+                  <a href="single-listing-1.html">Cowboy Davision</a>
+                </h3>
+                <p class="listing__review c-dusty-gray">
+                  <span class="stars-outer" data-rating="5">
+                    <span class="stars-inner"></span>
+                  </span>
+                  <span>(5 Reviews)</span>
+                </p>
+                <p class="listing__location c-dusty-gray no-b-margin">
+                  <i class="fa fa-map-marker"></i>
+                  18 Leinster Terr, Paddington
+                </p>
+              </div>
+
+              <div class="listing__detail-right">
+                <span class="listing__score t-center">7.0</span>
+              </div>
+            </div><!-- .listing__detail -->
+          </div><!-- .listing__wrapper -->
+        </div><!-- .listing -->
+      </div><!-- .list-view__item -->
+      <div class="list-view__item">
+        <div class="listing hover-effect">
+          <div class="d-sm-flex align-items-sm-center listing__wrapper">
+            <div class="listing__thumbnail">
+              <a href="single-listing-1.html">
+                <img src="assets/images/uploads/listing-5.jpg" alt="April Boutique Coffee">
+                <span class="label label--tertiary">Closed</span>
+                <span class="favorite c-white">
+                  <i class="fa fa-heart-o"></i>
+                </span>
+              </a>
+            </div><!-- .listing__thumbnail -->
+            <div class="d-flex justify-content-between align-items-center listing__detail">
+              <div class="listing__detail-left">
+                <p class="listing__category t-small">
+                  <span class="c-dove-gray">Cocktail, Coffee</span>
+                  <span class="listing__price">
+                    <i class="fa fa-usd c-dove-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                  </span>
+                </p>
+                <h3 class="listing__title">
+                  <a href="single-listing-1.html">Elana Cafe</a>
+                </h3>
+                <p class="listing__review c-dusty-gray">
+                  <span class="stars-outer" data-rating="4.5">
+                    <span class="stars-inner"></span>
+                  </span>
+                  <span>(5 Reviews)</span>
+                </p>
+                <p class="listing__location c-dusty-gray no-b-margin">
+                  <i class="fa fa-map-marker"></i>
+                  18 Leinster Terr, Paddington
+                </p>
+              </div>
+
+              <div class="listing__detail-right">
+                <span class="listing__score t-center">7.0</span>
+              </div>
+            </div><!-- .listing__detail -->
+          </div><!-- .listing__wrapper -->
+        </div><!-- .listing -->
+      </div><!-- .list-view__item -->
+      <div class="list-view__item">
+        <div class="listing hover-effect">
+          <div class="d-sm-flex align-items-sm-center listing__wrapper">
+            <div class="listing__thumbnail">
+              <a href="single-listing-1.html">
+                <img src="assets/images/uploads/listing-6.jpg" alt="April Boutique Coffee">
+                <span class="label label--tertiary">Closed</span>
+                <span class="favorite c-white">
+                  <i class="fa fa-heart-o"></i>
+                </span>
+              </a>
+            </div><!-- .listing__thumbnail -->
+            <div class="d-flex justify-content-between align-items-center listing__detail">
+              <div class="listing__detail-left">
+                <p class="listing__category t-small">
+                  <span class="c-dove-gray">Music, Lounge</span>
+                  <span class="listing__price">
+                    <i class="fa fa-usd c-dove-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                    <i class="fa fa-usd c-dusty-gray"></i>
+                  </span>
+                </p>
+                <h3 class="listing__title">
+                  <a href="single-listing-1.html">Fuzzy At Dry Martini</a>
+                </h3>
+                <p class="listing__review c-dusty-gray">
+                  <span class="stars-outer" data-rating="4">
+                    <span class="stars-inner"></span>
+                  </span>
+                  <span>(5 Reviews)</span>
+                </p>
+                <p class="listing__location c-dusty-gray no-b-margin">
+                  <i class="fa fa-map-marker"></i>
+                  18 Leinster Terr, Paddington
+                </p>
+              </div>
+
+              <div class="listing__detail-right">
+                <span class="listing__score t-center">7.0</span>
+              </div>
+            </div><!-- .listing__detail -->
+          </div><!-- .listing__wrapper -->
+        </div><!-- .listing -->
+      </div><!-- .list-view__item -->
+    </div><!-- .d-md-flex -->
+
+    <div class="t-center load-more">
+      <button class="button button--primary button--medium button--pill">Load More</button>
+    </div>
+  </div><!-- .listing-column -->
+</div><!-- d-flex -->
+<footer id="colophone" class="site-footer">
+  <div class="t-center site-footer__primary">
+    <div class="container">
+      <div class="site-footer__logo">
+        <a href="index.html">
+          <h1 class="screen-reader-text">Listiry</h1>
+          <img src="assets/images/logo-footer.png" alt="Listiry">
+        </a>
+      </div>
+      <p class="t-small">Listiry is making finding destination faster, easier, and customized for you.</p>
+      <ul class="min-list inline-list site-footer__links site-footer__social">
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-pinterest"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- .site-footer__primary -->
+
+  <div class="site-footer__secondary">
+    <div class="container">
+      <div class="site-footer__secondary-wrapper">
+        <p class="site-footer__copyright">&copy; 2018
+          <span class="c-secondary">Listiry</span> by Felix. All Rights Reserved.</p>
+        <ul class="min-list inline-list site-footer__links site-footer__details">
+          <li>
+            <a href="tel:+0987654321">Tel: +098 765 4321</a>
+          </li>
+          <li>
+            <a href="#">Get this theme</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- .site-footer__secondary -->
+</footer><!-- #colophone -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4"></script>
+<script src="https://cdn.rawgit.com/googlemaps/v3-utility-library/master/infobox/src/infobox.js"></script>
+<script src="assets/scripts/app.js"></script>
+</body>
+</html>
